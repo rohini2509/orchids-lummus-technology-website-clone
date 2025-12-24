@@ -73,21 +73,21 @@ const Hero = () => {
         </div>
 
         {/* Right Content / Video Side */}
-        <div className="flex flex-col gap-8 lg:pl-10">
-          {/* Embedded Video Player */}
-          <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl bg-black/20 group">
+        <div className="flex flex-col gap-8 lg:pl-10 relative">
+          {/* Transparent Video Animation */}
+          <div className="relative w-full h-full min-h-[400px] flex items-center justify-center pointer-events-none">
             <video 
               autoPlay 
               muted 
               loop 
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-auto max-w-[600px] mix-blend-screen scale-125 lg:scale-150"
             >
               <source src="https://d1g1fbp5o5wtrg.cloudfront.net/videos/Amorphous-Video_h264.mp4" type="video/mp4" />
             </video>
           </div>
 
-          <div className="max-w-[480px]">
+          <div className="max-w-[480px] relative z-10">
             <p className="text-white text-[18px] leading-[1.6] mb-8 font-normal opacity-90">
               At Lummus, we make the world work better, bringing together the best minds in science, technology, and business. Together, we give potential the energy to transform possibility into progress.
             </p>
