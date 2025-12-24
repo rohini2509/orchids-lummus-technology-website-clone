@@ -81,7 +81,7 @@ const Hero = () => {
               muted 
               loop 
               playsInline
-              className=""w-full h-auto max-w-[600px] mix-blend-screen scale-125 lg:scale-150"
+              className="w-full h-auto max-w-[600px] mix-blend-screen scale-125 lg:scale-150"
             >
               <source src="https://d1g1fbp5o5wtrg.cloudfront.net/videos/Amorphous-Video_h264.mp4" type="video/mp4" />
             </video>
